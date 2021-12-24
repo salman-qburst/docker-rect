@@ -7,3 +7,9 @@ before_install:
 
 script:
   - docker run salmanfarisk/frontend npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  #regoin: ""
+  on: 
+    branch: master
