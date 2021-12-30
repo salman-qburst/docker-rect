@@ -32,9 +32,9 @@ jobs:
     - name: Fix error 
       run: npm audit fix
 
-    - name: Run the tests
-      run: npm run test
+    # - name: Run the tests
+    #   run: npm run test
 
-    - name: Build
-      run: npm run build
+    # - name: Build
+    #   run: npm run build
 
