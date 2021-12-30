@@ -17,5 +17,20 @@ jobs:
         uses: actions/setup-node@v1
         with: 
            node-vertions: 13.x
+      
+      - name: Install npm package
+        run: npm ci
 
+      - name: Test the application
+        run: npm run test
+
+      - name: Building the application
+        run: npm run build
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+      
      
