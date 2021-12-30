@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hi there from feature branch
-          am new change
+          change from feature
 
         </p>
        
