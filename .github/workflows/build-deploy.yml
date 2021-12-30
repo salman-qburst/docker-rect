@@ -16,6 +16,6 @@ jobs:
       - name: Install node js
         uses: actions/setup-node@v1
         with: 
-          - node-vertions: 13.x
+           node-vertions: 13.x
 
      
