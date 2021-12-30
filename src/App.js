@@ -12,10 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <Home somedata="my passed data" onHomeClick={handleClickFromHome}/>
-          Hi there from feature branch
-          change from master
-          change from feature
-          again change
+          Hi there
 
         </p>
        
