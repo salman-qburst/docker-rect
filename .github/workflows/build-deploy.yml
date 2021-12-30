@@ -1,0 +1,21 @@
+name: React-Buld-Deploy
+
+on:
+  push:
+    branches : ['master']
+  pull_request: ['master']
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Install node js
+        uses: actions/setup-node@v1
+        with: 
+          - node-vertions: 13.x
+
+     
